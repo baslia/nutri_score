@@ -12,11 +12,12 @@ Support Open Food Facts contributors: Provide insights to guide further investig
 The project utilizes the Open Food Facts dataset, a free and open database of food products from around the world. The dataset contains information on nutritional values, ingredients, allergens, additives, and more. You can access and download the dataset from https://world.openfoodfacts.org/data.
 
 ## Methodology
-Data Preprocessing: The raw Open Food Facts dataset is preprocessed to:
+- Data Preprocessing: 
+The raw Open Food Facts dataset is preprocessed to:
 Handle missing values.
 Select relevant features for outlier detection (e.g., energy, fat, sugar, fiber, protein, salt, Nutri-Score).
 Normalize numerical features.
-Random Cut Forest Model: We employ the Random Cut Forest algorithm, an unsupervised anomaly detection technique, to identify outliers. This algorithm is well-suited for high-dimensional data and can efficiently handle large datasets.
+- Random Cut Forest Model: We employ the Random Cut Forest algorithm, an unsupervised anomaly detection technique, to identify outliers. This algorithm is well-suited for high-dimensional data and can efficiently handle large datasets.
 Outlier Identification: Products with anomaly scores above a certain threshold are flagged as potential outliers.
 Analysis and Visualization: The identified outliers are analyzed to understand the reasons behind their unusual Nutri-Scores. Visualizations are used to explore the distribution of outliers and their characteristics.
 
